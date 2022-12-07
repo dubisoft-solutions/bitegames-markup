@@ -38,10 +38,6 @@ textarea {
     resize: none;
 }
 
-.transform-skew {
-    transform: skew(-30deg, 0deg);
-}
-
 @include media-breakpoint-down(md) {
     .fs-2 {
         font-size: 3.125rem!important;

@@ -50,30 +50,27 @@
                     position: absolute;
                     top: 6.25rem;
                     left: .938rem;
-                    @include media-breakpoint-down(md) {
-                        height: 25rem;
+                    @include media-breakpoint-down(lg) {
+                        height: 30rem;
                         width: .188rem;
                         margin: 0 auto;
+                        top: -5.25rem;
                         left: 0;
                         right: 0;
+                        z-index: -1;
                     }
-                    @include media-breakpoint-down(lg) {
-                        top: .75rem;
-                    }
-                    @include media-breakpoint-between(sm, md) {
-                        width: 92%;
+                    @include media-breakpoint-between(xs, md) {
+                        height: 27rem;
                     }
                     @include media-breakpoint-between(md, lg) {
-                        width: 94%;
-                    }
-                    @include media-breakpoint-between(xxxl, xxxxl) {
-                        width: 90%;
+                        height: 32rem;
                     }
                     @include media-breakpoint-between(xxxxl, xxxxxl) {
-                        width: 92%;
+                        top: 5.25rem;
                     }
                     @include media-breakpoint-up(xxxxxl) {
-                        width: 94%;
+                        top: 4.25rem;
+                        left: 80px;
                     }
                 }
                 &::after {
@@ -88,12 +85,14 @@
                     border-radius: 50rem;
                     background-color: $pink-226;
                     @include media-breakpoint-down(lg) {
-                        top: -.125rem;
-                        right: .375rem;
-                        font-size: 1.875rem;
+                        display: none;
                     }
-                    @include media-breakpoint-between(lg, xl) {
-                        right: 0;
+                    @include media-breakpoint-between(xxxxl, xxxxxl) {
+                        top: 4.8rem;
+                    }
+                    @include media-breakpoint-up(xxxxxl) {
+                        top: 3.8rem;
+                        right: -5.25rem;
                     }
                 }
             }
@@ -103,6 +102,10 @@
                 right: 1.563rem;
                 font-weight: 400;
                 font-size: 8rem;
+                @include media-breakpoint-down(xl) {
+                    top: -5.375rem;
+                    right: .563rem;
+                }
             }
             .step-decor {
                 position: absolute;
@@ -163,7 +166,7 @@
             background-repeat: no-repeat;
             width: 50%;
             height: 15rem;
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
                 display: none;
             }
         }
