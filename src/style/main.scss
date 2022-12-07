@@ -1,0 +1,171 @@
+@import 'theme/theme';
+.index {
+    background-color: $black;
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .hero {
+            margin-bottom: 6rem;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 3rem;
+            }
+        }
+        .flag-icon {
+            width: 1rem;
+            @include media-breakpoint-down(md) {
+                width: .625rem;
+            }
+        }
+        .steps {
+            .step-heading {
+                position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    height: .25rem;
+                    width: 23.438rem;
+                    background: linear-gradient(90deg, rgba(174, 211, 0, 0) 0%, #AED300 50.8%, rgba(174, 211, 0, 0) 100%);
+                    opacity: 0.9;
+                    margin: 0 auto;
+                    margin-bottom: 3.375rem;
+                    @include media-breakpoint-down(md) {
+                        width: 17.5rem;
+                        margin-bottom: 1.25rem;
+                        left: 50%;
+                        margin-left: -1.875rem;
+                    }
+                }
+            }
+            .middle-line-decor {
+                position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    height: .188rem;
+                    width: 100%;
+                    border-style: dashed;
+                    color: $pink-226;
+                    position: absolute;
+                    top: 6.25rem;
+                    left: .938rem;
+                    @include media-breakpoint-down(md) {
+                        height: 25rem;
+                        width: .188rem;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                    }
+                    @include media-breakpoint-down(lg) {
+                        top: .75rem;
+                    }
+                    @include media-breakpoint-between(sm, md) {
+                        width: 92%;
+                    }
+                    @include media-breakpoint-between(md, lg) {
+                        width: 94%;
+                    }
+                    @include media-breakpoint-between(xxxl, xxxxl) {
+                        width: 90%;
+                    }
+                    @include media-breakpoint-between(xxxxl, xxxxxl) {
+                        width: 92%;
+                    }
+                    @include media-breakpoint-up(xxxxxl) {
+                        width: 94%;
+                    }
+                }
+                &::after {
+                    position: absolute;
+                    top: 5.813rem;
+                    right: -1.25rem;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50rem;
+                    background-color: $pink-226;
+                    @include media-breakpoint-down(lg) {
+                        top: -.125rem;
+                        right: .375rem;
+                        font-size: 1.875rem;
+                    }
+                    @include media-breakpoint-between(lg, xl) {
+                        right: 0;
+                    }
+                }
+            }
+            .number-decor {
+                position: absolute;
+                top: -4.375rem;
+                right: 1.563rem;
+                font-weight: 400;
+                font-size: 8rem;
+            }
+            .step-decor {
+                position: absolute;
+                top: -5rem;
+                left: -10.938rem;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 6.25rem;
+            }
+        }
+    }
+    .recaptcha-style {
+        transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        height: 8vh;
+        @include media-breakpoint-down(md) {
+            transform: scale(0.4);
+            -webkit-transform: scale(0.4);
+            height: 7vh;
+        }
+    }
+    .request-decor {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include media-breakpoint-down(lg) {
+            width: 50%;
+        }
+    }
+    .contact-decor {
+        position: absolute;
+        left: -4.063rem;
+        bottom: -2.5rem;
+        @include media-breakpoint-down(lg) {
+            width: 50%;
+            position: relative;
+            bottom: -1.563rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        background: $black;
+        padding: 5.313rem 0 1.875rem 0;
+        @include media-breakpoint-down(md) {
+            padding: 1.688rem 0 .5rem 0;
+        }
+        &:before {
+            content: "";
+            display: block;
+            background-image: url(../img/footer-decor.svg);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 15rem;
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+    }
+}

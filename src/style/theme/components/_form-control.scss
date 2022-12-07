@@ -1,0 +1,49 @@
+.form-control {
+    &::placeholder {
+        @include media-breakpoint-down(md) {
+            font-size: .563rem;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        font-size: .563rem;
+        padding: .688rem;
+    }
+}
+
+.contact-form {
+    .form-control {
+        font-weight: 400;
+        color: $gray;
+        background-color: $light-255!important;
+        border-radius: $border-radius-sm!important;
+        padding: .656rem .875rem;
+        border: none;
+        box-shadow: none;
+        &:focus {
+            box-shadow: none;
+        }
+        &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: .688rem;
+            color: $gray;
+            @include media-breakpoint-down(md) {
+                padding: .47rem .5rem;
+                font-size: .625rem;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            padding: .47rem .5rem;
+            font-size: .625rem;
+        }
+    }
+}
+
+.invalid-feedback {
+    font-weight: $font-weight-medium;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+    box-shadow: none;
+}

@@ -1,0 +1,42 @@
+.btn-primary {
+    color: $white;
+    background: $pink-226!important;
+    box-shadow: $box-shadow;
+    min-width: 14.375rem;
+    border: none;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        background-color: $pink-187;
+        width: 100%;
+        height: 26px;
+        position: absolute;
+        z-index: -1;
+        bottom: -5px;
+        right: 0;
+        border-radius: $border-radius-xl;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        box-shadow: 0px 4px 4px rgba(255, 83, 70, 0.2);
+        color: $white;
+        background-color: $pink-187;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: .563rem;
+        border-radius: .5rem;
+        padding: .75rem 1rem;
+        min-width: 9.375rem;
+    }
+}
+
+.btn-link {
+    @include media-breakpoint-down(md) {
+        font-size: .563rem;
+    }
+    @include media-breakpoint-up(xxxxl) {
+        font-size: 1.25rem;
+    }
+}

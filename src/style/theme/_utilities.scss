@@ -1,0 +1,67 @@
+.fw-medium {
+    font-weight: $font-weight-medium;
+}
+
+.font-family-title {
+    font-family: $font-family-title;
+}
+
+.text-dark {
+    color: $black-40!important;
+}
+
+.text-success {
+    color: $green!important;
+}
+
+.text-main {
+    color: $pink-226;
+}
+
+.bg-light {
+    background-color: $light!important;
+}
+
+.lh-sm {
+    line-height: $line-height-sm;
+}
+
+.w-31 {
+    width: 1.938rem;
+}
+
+.h-31 {
+    height: 1.938rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.transform-skew {
+    transform: skew(-30deg, 0deg);
+}
+
+@include media-breakpoint-down(md) {
+    .fs-2 {
+        font-size: 3.125rem!important;
+    }
+    .fs-3 {
+        font-size: 1.25rem!important;
+    }
+    .fs-4 {
+        font-size: .875rem!important;
+    }
+    .fs-5 {
+        font-size: .875rem!important;
+    }
+    .fs-6 {
+        font-size: .688rem!important;
+    }
+    .fs-7 {
+        font-size: .75rem!important;
+    }
+    .pb-6 {
+        padding-bottom: 4.875rem;
+    }
+}

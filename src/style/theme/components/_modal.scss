@@ -1,0 +1,24 @@
+.modal-backdrop {
+    background: rgba(36, 38, 50, 0.9);
+    &.show {
+        opacity: initial;
+    }
+}
+
+.modal-body {
+    padding: 30px 76px 40px 76px;
+    @include media-breakpoint-down(md) {
+        padding: 0px 25px 25px 25px;
+    }
+    .fs-2 {
+        @include media-breakpoint-down(md) {
+            font-size: 2.5rem!important;
+        }
+    }
+}
+
+.close-button {
+    position: relative;
+    top: 0;
+    right: 0;
+}

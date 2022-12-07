@@ -1,0 +1,126 @@
+@import "bootstrap-select/sass/variables";
+@import "bootstrap-select/sass/bootstrap-select";
+.bootstrap-select {
+    .dropdown-toggle.btn-light {
+        border-radius: $border-radius-md;
+        background-color: transparent;
+        padding: 1.094rem 1.125rem;
+        font-weight: 400;
+        font-size: .75rem;
+        color: $green;
+        border: 1px solid $yellow;
+        &::placeholder {
+            font-weight: 400;
+            color: $green;
+            @include media-breakpoint-down(md) {
+                font-size: .438rem;
+            }
+        }
+        &:focus {
+            outline: none!important;
+            outline-offset: none!important;
+            box-shadow: none;
+        }
+        &.show,
+        &:active,
+        &:focus,
+        &:hover {
+            color: $green!important;
+            background-color: transparent!important;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: .438rem;
+            padding: .531rem .688rem;
+        }
+    }
+    .dropdown-toggle {
+        &.show {
+            &:after {
+                color: $pink-187;
+                transform: rotate(180deg);
+            }
+        }
+        &::after {
+            color: $pink-187;
+        }
+    }
+    &>.dropdown-menu {
+        background-color: $green-5;
+        border: none;
+        padding: .625rem 0;
+        padding-right: .25rem;
+        border-radius: $border-radius;
+        ul {
+            background-color: transparent;
+            max-height: 8.313rem;
+            overflow-y: auto;
+            padding-left: 0;
+            margin-bottom: 0;
+            &.show {
+                color: $green;
+                background-color: transparent;
+                border: none;
+            }
+            .dropdown-item {
+                font-weight: $font-weight-medium;
+                color: $black-40;
+                font-size: .75rem;
+                &.active,
+                &:hover,
+                &:focus {
+                    color: $white;
+                    background-color: $green-27;
+                    border-radius: $border-radius;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: .5rem;
+                    padding: .35rem .25rem;
+                }
+                @include media-breakpoint-up(xxxxl) {
+                    font-size: 1rem;
+                }
+            }
+        }
+        ul::-webkit-scrollbar {
+            width: .563rem;
+            @include media-breakpoint-down(md) {
+                width: .25rem;
+            }
+        }
+        ul::-webkit-scrollbar-track {
+            background-color: $green-27;
+            border-radius: $border-radius;
+        }
+        ul::-webkit-scrollbar-thumb {
+            background: $pink-226;
+            border-radius: $border-radius;
+        }
+        @include media-breakpoint-down(md) {
+            padding: .5rem 0;
+        }
+    }
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder {
+    font-size: .75rem;
+    color: $green;
+    @include media-breakpoint-down(md) {
+        font-size: .438rem;
+    }
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    font-size: .75rem;
+    color: $green;
+    @include media-breakpoint-down(md) {
+        font-size: .438rem;
+    }
+}
+
+.bootstrap-select.is-valid .dropdown-toggle,
+.was-validated .bootstrap-select select:valid+.dropdown-toggle {
+    border-color: $green!important;
+}

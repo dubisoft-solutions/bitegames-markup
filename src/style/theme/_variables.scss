@@ -1,0 +1,86 @@
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: "Montserrat" !default;
+$font-family-title: 'HOT GRILL' !default;
+$white: #FFFFFF;
+$light-255:#F5F5FF;
+$light: #E8E8E9;
+$yellow: #FFF7C7;
+$red-70: #FF5346;
+$pink-226: #BF2DE2;
+$pink-187: #9E25BB;
+$green-27: #586519;
+$green-5: #9EBE05;
+$green: #AED300;
+$gray: #9F9F9F;
+$black-41: #2C2929;
+$black-88: #183258;
+$black-65: #0F3741;
+$black-40: #1E2128;
+$black: #1E2128;
+// font sizes
+$font-size-base: .875rem;
+$line-height-base: 1;
+$line-height-sm: 1.5;
+$headings-font-family: $font-family-title;
+$h1-font-size: 3.75rem;
+$h2-font-size: 3rem;
+$headings-line-height: 1;
+$font-weight-medium: 500;
+$font-sizes: ( 1: 8rem, 2: 5.625rem, 3: 2.25rem, 4: 1.5rem, 5: 1rem, 6: .938rem, 7: .875rem);
+$spacer: 1rem;
+$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 4.875);
+// box-shadow
+$box-shadow: (0px 4px 4px rgba(36, 0, 0, 0.25)) !default;
+// border
+$border-radius: .25rem;
+$border-radius-sm: .313rem;
+$border-radius-md: .375rem;
+$border-radius-lg: .625rem;
+$border-radius-xl: .75rem;
+// buttons
+$btn-padding-y: 1.063rem;
+$btn-padding-x: 2rem;
+$btn-font-size: 1.125rem;
+$btn-font-weight: 700;
+$btn-line-height: 1rem;
+$btn-border-radius: $border-radius-xl;
+$btn-color: $white!default;
+$btn-box-shadow: $box-shadow;
+$btn-link-color: $green;
+$btn-link-hover-color: $green-5;
+// dropdown
+$dropdown-padding-x: .625rem;
+$dropdown-padding-y: .375rem;
+$dropdown-item-padding-y: .5rem;
+$dropdown-item-padding-x: .75rem;
+$dropdown-font-size: .75rem;
+$dropdown-bg: $green!default;
+$dropdown-color: $black-40!default;
+$dropdown-link-color: $black-65;
+// break points
+$grid-breakpoints: (xxc:0, xs: 390px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px, xxxl: 1548px, xxxxl: 1920px, xxxxxl: 2560px);
+// containers
+$container-max-widths: (xc: 355px, sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1267px, xxxl: 1375px, xxxxl: 1747px, xxxxxl: 2387px);
+// form-control
+$input-font-size: .875rem;
+$input-font-weight: 400;
+$input-placeholder-color: $green;
+$input-color: $green;
+$input-bg: transparent;
+$input-border-color: $yellow;
+$input-focus-border-color: $yellow!default;
+$input-padding-y: 1.094rem;
+$input-padding-x: 1.125rem;
+$input-border-radius: $border-radius-md;
+$form-feedback-invalid-color: $red-70;
+$form-feedback-icon-invalid-color: $red-70;
+$form-feedback-font-size: .875rem;
+$input-box-shadow: none;
+$input-focus-box-shadow: none;
+// modal
+$modal-content-bg: $green;
+$modal-content-border-radius: $border-radius-xl;
+$modal-backdrop-bg: #242632!default;
+$modal-backdrop-opacity: .9;
+$modal-dialog-margin: 2.375rem;
