@@ -14734,13 +14734,13 @@ textarea.form-control-lg {
 
 @media (max-width: 767.98px) {
   .form-control::placeholder {
-    font-size: 0.563rem;
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 767.98px) {
   .form-control {
-    font-size: 0.563rem;
-    padding: 0.688rem;
+    font-size: 0.75rem;
+    padding: 0.579rem;
   }
 }
 
@@ -14844,7 +14844,7 @@ textarea.form-control-lg {
   padding-left: 0.5rem;
 }
 .dropdown-menu.dropdown-style ul {
-  max-height: 7rem;
+  max-height: 5rem;
   overflow-y: auto;
   padding-right: 0;
   margin-bottom: 0;
@@ -15347,7 +15347,7 @@ select.selectpicker {
 }
 @media (max-width: 767.98px) {
   .bootstrap-select .dropdown-toggle.btn-light::placeholder {
-    font-size: 0.438rem;
+    font-size: 0.75rem;
   }
 }
 .bootstrap-select .dropdown-toggle.btn-light:focus {
@@ -15361,7 +15361,7 @@ select.selectpicker {
 }
 @media (max-width: 767.98px) {
   .bootstrap-select .dropdown-toggle.btn-light {
-    font-size: 0.438rem;
+    font-size: 0.75rem;
     padding: 0.531rem 0.688rem;
   }
 }
@@ -15381,7 +15381,7 @@ select.selectpicker {
 }
 .bootstrap-select > .dropdown-menu ul {
   background-color: transparent;
-  max-height: 8.313rem;
+  max-height: 6rem;
   overflow-y: auto;
   padding-right: 0;
   margin-bottom: 0;
@@ -15398,13 +15398,13 @@ select.selectpicker {
 }
 .bootstrap-select > .dropdown-menu ul .dropdown-item.active, .bootstrap-select > .dropdown-menu ul .dropdown-item:hover, .bootstrap-select > .dropdown-menu ul .dropdown-item:focus {
   color: #FFFFFF;
-  background-color: #586519;
+  background-color: #6E7E21;
   border-radius: 0.25rem;
 }
 @media (max-width: 767.98px) {
   .bootstrap-select > .dropdown-menu ul .dropdown-item {
-    font-size: 0.5rem;
-    padding: 0.35rem 0.25rem;
+    font-size: 0.75rem;
+    padding: 0.35rem 1rem;
   }
 }
 @media (min-width: 1920px) {
@@ -15431,6 +15431,7 @@ select.selectpicker {
 @media (max-width: 767.98px) {
   .bootstrap-select > .dropdown-menu {
     padding: 0.5rem 0;
+    padding-left: 0.25rem;
   }
 }
 
@@ -15440,7 +15441,7 @@ select.selectpicker {
 }
 @media (max-width: 767.98px) {
   .bootstrap-select > .dropdown-toggle.bs-placeholder {
-    font-size: 0.438rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -15456,7 +15457,7 @@ select.selectpicker {
   .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
   .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
   .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
-    font-size: 0.438rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -15519,7 +15520,7 @@ textarea {
     font-size: 0.875rem !important;
   }
   .fs-6 {
-    font-size: 0.688rem !important;
+    font-size: 0.938rem !important;
   }
   .fs-7 {
     font-size: 0.75rem !important;
@@ -15611,7 +15612,7 @@ p {
 }
 @media (max-width: 991.98px) {
   .index main .steps .middle-line-decor::before {
-    height: 30rem;
+    height: 33rem;
     width: 0.188rem;
     margin: 0 auto;
     top: -5.25rem;
@@ -15620,9 +15621,14 @@ p {
     z-index: -1;
   }
 }
-@media (min-width: 390px) and (max-width: 767.98px) {
+@media (min-width: 390px) and (max-width: 575.98px) {
   .index main .steps .middle-line-decor::before {
-    height: 27rem;
+    height: 32rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .index main .steps .middle-line-decor::before {
+    height: 31rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -15754,5 +15760,13 @@ p {
 @media (min-width: 992px) {
   .index .footer:before {
     display: none;
+  }
+}
+.index .footer .copyright-text {
+  font-size: 0.938rem;
+}
+@media (max-width: 767.98px) {
+  .index .footer .copyright-text {
+    font-size: 0.688rem;
   }
 }
