@@ -1,12 +1,12 @@
 .form-control {
     &::placeholder {
         @include media-breakpoint-down(md) {
-            font-size: .563rem;
+            font-size: .75rem;
         }
     }
     @include media-breakpoint-down(md) {
-        font-size: .563rem;
-        padding: .688rem;
+        font-size: .75rem;
+        padding: .579rem;
     }
 }
 

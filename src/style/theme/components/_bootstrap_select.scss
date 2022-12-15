@@ -13,7 +13,7 @@
             font-weight: 400;
             color: $green;
             @include media-breakpoint-down(md) {
-                font-size: .438rem;
+                font-size: .75rem;
             }
         }
         &:focus {
@@ -29,7 +29,7 @@
             background-color: transparent!important;
         }
         @include media-breakpoint-down(md) {
-            font-size: .438rem;
+            font-size: .75rem;
             padding: .531rem .688rem;
         }
     }
@@ -52,7 +52,7 @@
         border-radius: $border-radius;
         ul {
             background-color: transparent;
-            max-height: 8.313rem;
+            max-height: 6rem;
             overflow-y: auto;
             padding-left: 0;
             margin-bottom: 0;
@@ -69,12 +69,12 @@
                 &:hover,
                 &:focus {
                     color: $white;
-                    background-color: $green-27;
+                    background-color: #6E7E21;
                     border-radius: $border-radius;
                 }
                 @include media-breakpoint-down(md) {
-                    font-size: .5rem;
-                    padding: .35rem .25rem;
+                    font-size: .75rem;
+                    padding: .35rem 1rem;
                 }
                 @include media-breakpoint-up(xxxxl) {
                     font-size: 1rem;
@@ -97,6 +97,7 @@
         }
         @include media-breakpoint-down(md) {
             padding: .5rem 0;
+            padding-right: .25rem;
         }
     }
 }
@@ -105,7 +106,7 @@
     font-size: .75rem;
     color: $green;
     @include media-breakpoint-down(md) {
-        font-size: .438rem;
+        font-size: .75rem;
     }
 }
 
@@ -116,7 +117,7 @@
     font-size: .75rem;
     color: $green;
     @include media-breakpoint-down(md) {
-        font-size: .438rem;
+        font-size: .75rem;
     }
 }
 
