@@ -112,7 +112,7 @@
             }
             .step-decor {
                 position: absolute;
-                top: -5rem;
+                top: -4rem;
                 left: -10.938rem;
             }
             @include media-breakpoint-down(md) {
@@ -144,10 +144,18 @@
         position: absolute;
         left: -4.063rem;
         bottom: -2.5rem;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(md) {
             width: 50%;
             position: relative;
             bottom: -1.563rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        @include media-breakpoint-between(md, lg) {
+            width: 50%;
+            position: relative;
+            bottom: -2.563rem;
             left: 0;
             right: 0;
             margin: 0 auto;
