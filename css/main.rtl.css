@@ -15690,7 +15690,7 @@ p {
 }
 .index main .steps .step-decor {
   position: absolute;
-  top: -5rem;
+  top: -4rem;
   right: -10.938rem;
 }
 @media (max-width: 767.98px) {
@@ -15727,11 +15727,21 @@ p {
   right: -4.063rem;
   bottom: -2.5rem;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .index .contact-decor {
     width: 50%;
     position: relative;
     bottom: -1.563rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .index .contact-decor {
+    width: 50%;
+    position: relative;
+    bottom: -2.563rem;
     right: 0;
     left: 0;
     margin: 0 auto;
