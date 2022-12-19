@@ -52,7 +52,10 @@
                         <form class="needs-validation" novalidate>
                             <div class="row mb-lg-4 mb-2">
                                 <div class="col-lg-7 col-12">
-                                    <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email">
+                                    <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email" required>
+                                    <div class="invalid-feedback">
+                                        Required field*
+                                    </div>
                                 </div>
                                 <div class="col-lg-4 offset-lg-1 col-4 offset-0 text-end d-lg-block d-none">
                                     <div class="grecaptcha recaptcha-style"></div>
@@ -61,13 +64,16 @@
 
                             <div class="row">
                                 <div class="col-lg-3 col-5 pe-1 mb-lg-0 mb-2">
-                                    <select class="selectpicker form-control" title="Country Code" id="basic-country">
+                                    <select class="selectpicker form-control" title="Country Code" id="basic-country" required>
                                             <option>SPAIN (+34)</option>
                                             <option>SPAIN (+34)</option>
                                             <option>SPAIN (+34)</option>
                                             <option>SPAIN (+34)</option>
                                             <option>SPAIN (+34)</option>
                                         </select>
+                                    <div class="invalid-feedback">
+                                        Required field*
+                                    </div>
                                 </div>
                                 <div class="col-lg-4 col-12 ps-lg-1 ps-initial mb-lg-0 mb-2">
                                     <div class="has-validation">
@@ -81,7 +87,7 @@
                                     <div class="grecaptcha recaptcha-style"></div>
                                 </div>
                                 <div class="col-lg-4 col-8 text-lg-start text-end">
-                                    <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestAcceptedModal">SEND</button>
+                                    <button type="submit" class="btn btn-primary">SEND</button>
                                 </div>
                             </div>
                         </form>
