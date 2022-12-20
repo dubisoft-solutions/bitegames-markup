@@ -19,7 +19,7 @@
                         <p class="text-white fs-7 mb-4">Please provide us with your, e-mail and mobile phone number if <span class="d-lg-block d-inline"> you wish to unsubscribe from <span class="fw-medium">Bitegames</span>.</span>
                         </p>
 
-                        <form class="needs-validation" novalidate>
+                        <form id="subscribeForm" class="needs-validation" novalidate>
                             <div class="row mb-lg-4 mb-2">
                                 <div class="col-lg-7 col-12">
                                     <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-email" required>
@@ -152,16 +152,25 @@
                         </div>
                         <div class="col-lg-6 order-lg-1 order-0 position-relative">
                             <h2 class="fs-2 text-white d-lg-none d-block mb-4 text-center">get in touch</h2>
-                            <form class="contact-form">
+                            <form class="contact-form needs-validation" novalidate>
                                 <div class="mb-lg-3 mb-2">
-                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                    <input type="text" required class="form-control" id="inputName" placeholder="Name">
+                                    <div class="invalid-feedback">
+                                        Required field*
+                                    </div>
                                 </div>
                                 <div class="mb-lg-3 mb-2">
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email address" aria-describedby="emailHelp">
+                                    <input type="email" required class="form-control" id="inputEmail" placeholder="Email address" aria-describedby="emailHelp">
+                                    <div class="invalid-feedback">
+                                        Required field*
+                                    </div>
                                 </div>
 
                                 <div class="mb-lg-3 mb-3">
-                                    <textarea class="form-control" id="messageTextarea" rows="5" placeholder="Message"></textarea>
+                                    <textarea class="form-control" required id="messageTextarea" rows="5" placeholder="Message"></textarea>
+                                    <div class="invalid-feedback">
+                                        Required field*
+                                    </div>
                                 </div>
 
                                 <div class="mb-lg-4 mb-3">
